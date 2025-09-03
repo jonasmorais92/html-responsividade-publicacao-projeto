@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-:root {
+:root {      /*Criando funções para padronizar as cores e as fontes uzadas no projeto da interface.*/
     --cor-primaria: #000000;
-    --cor-secundaria:#f6f6f6f6;
+    --cor-secundaria: #f6f6f6f6;
     --cor-terciaria: #22D4FD;
     --cor-hover: #272727;
 
@@ -14,7 +14,7 @@
     padding: 0;
 }
 
-body{
+body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -26,7 +26,7 @@ body{
 
 .cabecalho__menu {
     display: flex;
-    gap: 80px;
+    gap: 80px;      /*Atributo GAP (usado dentro do pai que contém display flex) usado para dar espaçamento entre os elementos dentro do mesmo pai.*/ 
 }
 
 .cabecalho__menu__link {
@@ -35,48 +35,48 @@ body{
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: uppercase;      /*Atributo usado para transformar os textos em todos com letra maiúscula.*/
 }
 
 .apresentacao {
     padding: 5% 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;     /*Atributo usado para dar espaçamento entre os elementos, de forma que fiquem dividido entre a tela.*/
     gap: 82px;
 }
 
 .apresentacao__conteudo {
     width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;     /*Atributo usado pra mudar a direção do flexbox, que por padrão é organizado em linha (row). Nesse caso foi forçado pra alinhar em colunas (column).*/
     gap: 40px;
 }
 
-.apresentacao__conteudo__titulo{
+.apresentacao__conteudo__titulo {
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
 
-.titulo-destaque{
+.titulo-destaque {
     color: var(--cor-terciaria);
 }
 
-.apresentacao__conteudo__texto{
+.apresentacao__conteudo__texto {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
-.apresentacao__links{
+.apresentacao__links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;  /*Espaçamento entre os elementos dentro da classe pai*/
+    gap: 32px;  /*Espaçamento entre os elementos dentro da classe pai.*/
 }
 
-.apresentacao__links__subtitulo{
+.apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 1.5rem;
@@ -84,7 +84,7 @@ body{
 
 .apresentacao__links__navegacao {
     display: flex;
-    justify-content: center;
+    justify-content: center;  /*Atributo usado para alinhar os elementos sem espaçamento, no centro da tela. Nesse caso o que sobrar de espaço lateral sera dividido entre as duas bordas.*/
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
     width: 50%;
@@ -98,7 +98,7 @@ body{
     font-family: var(--fonte-secundaria);
 }
 
-.apresentacao__links__navegacao:hover{
+.apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
 }
 
@@ -120,16 +120,16 @@ body{
         padding: 10%;
     }
 
-    .cabecalho__menu{
+    .cabecalho__menu {
         justify-content: center;
     }
     .apresentacao {
-        flex-direction: column-reverse; /*Colocando a imagem acima do título*/
+        flex-direction: column-reverse; /*Colocando a imagem acima do título.*/
         padding: 5%;
     }
 
-    .apresentacao__conteudo{
-        width: auto;
+    .apresentacao__conteudo {
+        width: auto;        /*Width: auto; Usao para o conteúdo usar todo o espaço de larura no qual ele esta inserido (respeitando o width limitado pelo seu pai).*/
     }
     
 }
