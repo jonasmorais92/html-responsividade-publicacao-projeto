@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-:root {      /*Criando funções para padronizar as cores e as fontes uzadas no projeto da interface.*/
+:root {
     --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6f6;
     --cor-terciaria: #22D4FD;
@@ -26,7 +26,7 @@ body {
 
 .cabecalho__menu {
     display: flex;
-    gap: 80px;      /*Atributo GAP (usado dentro do pai que contém display flex) usado para dar espaçamento entre os elementos dentro do mesmo pai.*/ 
+    gap: 80px;
 }
 
 .cabecalho__menu__link {
@@ -35,21 +35,21 @@ body {
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
-    text-transform: uppercase;      /*Atributo usado para transformar os textos em todos com letra maiúscula.*/
+    text-transform: uppercase;
 }
 
 .apresentacao {
     padding: 5% 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;     /*Atributo usado para dar espaçamento entre os elementos, de forma que fiquem dividido entre a tela.*/
+    justify-content: space-between;
     gap: 82px;
 }
 
 .apresentacao__conteudo {
     width: 50%;
     display: flex;
-    flex-direction: column;     /*Atributo usado pra mudar a direção do flexbox, que por padrão é organizado em linha (row). Nesse caso foi forçado pra alinhar em colunas (column).*/
+    flex-direction: column;
     gap: 40px;
 }
 
@@ -73,7 +73,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;  /*Espaçamento entre os elementos dentro da classe pai.*/
+    gap: 32px;
 }
 
 .apresentacao__links__subtitulo {
@@ -84,7 +84,7 @@ body {
 
 .apresentacao__links__navegacao {
     display: flex;
-    justify-content: center;  /*Atributo usado para alinhar os elementos sem espaçamento, no centro da tela. Nesse caso o que sobrar de espaço lateral sera dividido entre as duas bordas.*/
+    justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
     width: 50%;
@@ -124,12 +124,12 @@ body {
         justify-content: center;
     }
     .apresentacao {
-        flex-direction: column-reverse; /*Colocando a imagem acima do título.*/
+        flex-direction: column-reverse;
         padding: 5%;
     }
 
     .apresentacao__conteudo {
-        width: auto;        /*Width: auto; Usao para o conteúdo usar todo o espaço de larura no qual ele esta inserido (respeitando o width limitado pelo seu pai).*/
+        width: auto;
     }
     
 }
